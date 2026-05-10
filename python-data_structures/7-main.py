@@ -8,5 +8,3 @@ print(new_tuple)
 
 print(add_tuple(tuple_a, (1, )))
 print(add_tuple(tuple_a, ()))
-
-# print(f"len(1, ) = {len((1, ))} and len(()) = {len(())}")
