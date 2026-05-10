@@ -5,4 +5,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
     new_tuple_list = []
     for iterator in range(2):
         new_tuple_list.append(tuple_a[iterator] + tuple_b[iterator])
-    return(new_tuple_list[0], new_tuple_list[1])
+    return (new_tuple_list[0], new_tuple_list[1])
