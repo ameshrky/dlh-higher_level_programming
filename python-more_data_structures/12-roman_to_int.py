@@ -21,6 +21,11 @@ def roman_to_int(roman_string):
     roman_int = 0
     i = len(roman_string) - 1
     while i >= 0:
+        if roman_string[i] == 'V':
+            if i > 0 and roman_string[i-1] == 'I':
+                roman_int += roman_int_map.get('IV')
+                i -= 2
+                continue
         if roman_string[i] == 'X':
             if i > 0 and roman_string[i-1] == 'I':
                 roman_int += roman_int_map.get('IX')
