@@ -2,7 +2,7 @@
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str):
         return 0
-        
+
     roman_int_map = {
         "I": 1,
         "IV": 4,
