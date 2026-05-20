@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-def safe_print_list_integers(my_list=[], x=0):
-    count = 0
+def safe_print_division(a, b):
+    """Divides 2 integers and prints the result."""
+    result = None
 
-    for i in range(x):
-        try:
-            print("{:d}".format(my_list[i]), end="")
-            count += 1
-        except (ValueError, TypeError):
-            continue
+    try:
+        result = a / b
+    except Exception:
+        result = None
+    finally:
+        print("Inside result: {}".format(result))
 
-    print()
-    return count
+    return result
