@@ -40,5 +40,9 @@ class Square:
     def my_print(self):
         """This method print ### as many times as the size of the square"""
 
+        if self.__size == 0:
+            print("")
+            return
+
         for i in range(self.__size):
             print("#" * self.__size)
