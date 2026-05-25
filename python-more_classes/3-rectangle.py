@@ -48,12 +48,12 @@ class Rectangle:
         else:
             return 2 * (self.width + self.height)
 
-
     def __str__(self):
         rectangle_str = ''
-        for height_iter in range(self.height):
-            if height_iter < self.height - 1:
-                rectangle_str += "#" * self.width + "\n"
-            else:
-                rectangle_str += "#" * self.width
+        if self.height != 0 and self.width != 0:
+            for height_iter in range(self.height):
+                if height_iter < self.height - 1:
+                    rectangle_str += "#" * self.width + "\n"
+                else:
+                    rectangle_str += "#" * self.width
         return rectangle_str
