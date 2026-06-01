@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+    <name>Sample Person</name>
+    <age>42</age>
+    <city>Luxembourg</city>
+    <occupation>Project Tester</occupation>
+</data>
